@@ -5,37 +5,59 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f6f8;
             margin: 0;
-            padding: 0;
-            text-align: center;
+            background: #f4f6f8;
         }
 
         .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
             background: white;
-            max-width: 500px;
-            margin: 60px auto;
             padding: 30px;
+            margin-top: 30px;
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        img {
+            width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
         }
 
         h1 {
-            margin-bottom: 10px;
+            margin: 10px 0;
         }
 
         h2 {
             color: #555;
             font-size: 18px;
-            margin-bottom: 20px;
-        }
-
-        p {
-            margin: 8px 0;
         }
 
         .section {
+            text-align: left;
             margin-top: 20px;
+        }
+
+        .section h3 {
+            border-bottom: 2px solid #007bff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 14px;
         }
 
         .btn {
@@ -51,29 +73,53 @@
         .btn:hover {
             background-color: #0056b3;
         }
+
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Siddhi Dadajwar</h1>
-    <h2>Aspiring Web Developer | B.Sc Computer Science Student</h2>
 
-    <p><strong>Skills:</strong> C, C++, HTML</p>
+    <div class="card">
+        <img src="https://via.placeholder.com/120" alt="Profile Photo">
+        <h1>Siddhi Dadajwar</h1>
+        <h2>Aspiring Web Developer | B.Sc Computer Science Student</h2>
+        <p>Nanded, Maharashtra</p>
+    </div>
 
-    <div class="section">
+    <div class="card section">
+        <h3>About Me</h3>
+        <p>
+            I am a B.Sc Computer Science student with knowledge of C, C++, and HTML.
+            I am passionate about learning web development and building simple,
+            clean, and functional websites. I am currently looking for internship
+            opportunities to gain real-world experience.
+        </p>
+    </div>
+
+    <div class="card section">
+        <h3>Skills</h3>
+        <div class="skills">
+            <span>C</span>
+            <span>C++</span>
+            <span>HTML</span>
+        </div>
+    </div>
+
+    <div class="card section">
         <h3>Projects</h3>
         <p>• Resume Portfolio Website</p>
     </div>
 
-    <div class="section">
+    <div class="card section">
         <h3>Contact</h3>
         <p>Email: siddhidadajawar@gmail.com</p>
+        <a href="https://github.com/siddhidadajvar" class="btn">View GitHub</a>
     </div>
 
-    <a href="https://github.com/siddhidadajvar" class="btn">View GitHub</a>
 </div>
 
 </body>
 </html>
-  
+
+       
